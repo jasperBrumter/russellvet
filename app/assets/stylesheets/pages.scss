@@ -1,0 +1,165 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: 'Mali', cursive;
+  margin: 0;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 4px rgba(10,10,10,0.7);
+}
+.subtitle {
+  font-weight: lighter;
+  color: white;
+}
+.navigationbar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top:0px;
+  right: 0px;
+  left: 0px;
+}
+.leftnav {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid lightgreen;
+  color: darkred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6px rgba(30,30,30,0.8);
+  background-color: rgba(160,160,160,0.8);
+}
+ h2 {
+  font-size: 20px;
+  color: darkred;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(120,120,120,0.2), rgba(120,120,120,0.1)),url("animal-bulldog.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.container {
+  width:500px;
+  margin: 0 auto;
+  border-radius: 30px;
+
+}
+
+.firstpage {
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.meet-btn {
+  background-color: rgba(152,251,152,0.4);
+  border-radius:10px;
+  padding: 5px 15px;
+  border: rgba(152,251,152,0.5) 1px solid;
+  box-shadow: 2px 2px 4px rgba(30,30,30,0.5);
+}
+.meet-btn:hover {
+  background-color: rgba(152,251,152,0.9);
+}
+.contact-btn {
+  background-color: rgba(150,65,89,0.5);
+  border-radius:10px;
+  padding: 5px 15px;
+  border: rgba(150,65,89,0.5) 1px solid;
+  box-shadow: 2px 2px 4px rgba(30,30,30,0.5);
+}
+
+.contact-btn:hover {
+  background-color: rgba(150,65,89,0.9);
+}
+
+
+.contact {
+  width:800px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.text {
+  background-color: rgba(250,250,250,.8);
+  padding: 10px 30px;
+  flex: 1 0 400px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px rgba(15,15,15,.9);
+  color: white;
+  margin: 10px;
+}
+.title {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+
+}
+.contact * {
+  color: black;
+}
+.contact i {
+  color: rgba(150,65,89,0.9);
+}
+
+.photo {
+  width: 300px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 40px;
+}
+.left {
+  text-align: left;
+}
+#contact {
+  margin-bottom: 50vh;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .contact {
+      flex-wrap: wrap;
+      width: 95%;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 80%;
+    }
+    .text {
+      width: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+<div class="wrapper"></div>
+
+    <div class="navigationbar">
+      <div class="leftnav">
+        <div><h2 class="logo">RVS</h2>
+        </div>
+      </div>
+      <div class="rightnav">
+        <a href="#meet" class="contact-btn js-scrollTo">Meet the Vet</a>
+        <a href="#contact" id="contactbtn" class="contact-btn js-scrollTo">Contact</a>
+      </div>
+    </div>
+    <div class="firstpage">
+      <div class="container">
+        <h1>Welcome to<br> Russell Veterinary Services</h1>
+        <h2 class="subtitle">since 1992</h2>
+      </div>
+    </div>
+    <div id="meet" class="contact">
+      <div>
+        <img src="rvsgc.jpg" class="photo">
+      </div>
+      <div class="text">
+        <div class="title">
+          <h1>Dr Geoffrey A. H. Cochrane</h1>
+          <h2>DVM, MSc, DACAS Professional Animal Scientist (PAS)</h2>
+        </div>
+        <p> Dr. Cochrane received his academic qualifications and formal education from the Ontario Veterinary College (DVM) and the Royal Veterinary College (MSc). In addition, a graduate diploma in business management (DBA) from the Faculty of Administration of the University of Ottawa was obtained.
+
+        He is a Board Certified Diplomate in both Applied Animal Behavior and Animal Welfare with the American College of Animal Sciences, currently serving as Director of the Animal Welfare Science Discipline.
+        </p><br>
+      </div>
+      <div class="text">
+        <div class="title">
+          <h3>COMPANION  ANIMALS</h3>
+        </div>
+        <p>Small animal office practice limited to preventive and primary medical health care including:</p>
+        <ul><li><p><strong>Veterinary pediatrics –</strong> vaccinations, parasite prevention & behavioral consultations</p></li>
+          <li><p><strong>Applied animal nutrition -</strong> body condition scoring, weight control, therapeutic dietary management</p></li>
+          <li><p><strong>Veterinary geriatrics – </strong>inflammation & pain management, palliative care and quality of life assessment</p></li>
+        </ul>
+      </div>
+      <div class="text" id="contact">
+          <h3><i class="fas fa-phone"></i> - 613-445-2179<br><i class="far fa-envelope"></i> - RVS@xplornet.com<br><i class="fas fa-home"></i> - 2980 Gregoire Road, Russell Ontario, K4R 1E5  - <a href="https://www.google.com/maps/place/2980+Gregoire+Rd,+Russell,+ON+K4R+1E5/@45.2492327,-75.4009362,16z/data=!4m5!3m4!1s0x4ccdd8eaa459338b:0x50e527e402c1bfe9!8m2!3d45.2491107!4d-75.3990744" target="_blank">View in Maps</a></h3>
+      </div>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.js-scrollTo').on('click', function() {
+        var page = $(this).attr('href');
+        var speed = 600;
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+        return false;
+      });
+    });
+
+    document.querySelector("#contactbtn").addEventListener("click", (e) => {
+      document.querySelector("#contact").style.border="4px solid rgba(150,65,89,0.9)";
+    });
+  </script>
